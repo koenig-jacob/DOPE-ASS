@@ -1,0 +1,4 @@
+[submodule "DOPE"]
+	path = DOPE
+	url = https://github.com/crunchy4159/DOPE
+	branch = main
