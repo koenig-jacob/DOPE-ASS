@@ -2,7 +2,7 @@
 
 # DOPE — Digital Optical Performance Engine
 
-## Version 1.6 — DRAFT
+## Version 2.0 — DRAFT
 
 **Date:** 2026-02-27  
 **Language Target:** C++17  
@@ -474,4 +474,4 @@ If none of these sources are available, or if the magnetometer is flagged as dis
 ---
 
 End of Document  
-DOPE SRS v1.33
+DOPE SRS v2.0
