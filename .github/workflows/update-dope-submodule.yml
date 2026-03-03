@@ -30,3 +30,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add DOPE
           git diff --staged --quiet || (git commit -m "chore: update DOPE submodule to latest" && git push)
+
+      - name: Neutralize orphaned DOPE/third_party/imgui gitlink
+        if: always()
+        run: git -C DOPE rm --cached third_party/imgui 2>/dev/null || true
