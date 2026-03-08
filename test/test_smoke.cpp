@@ -21,7 +21,6 @@ TEST(Smoke, BCE_FaultsAfterUpdateWithNoSensors)
     SensorFrame frame{};
     BCE_Update(&frame);
 
-    // Engine should be in IDLE or FAULT with no range data
-    BCE_Mode mode = BCE_GetMode();
-    EXPECT_TRUE(mode == BCE_Mode::IDLE || mode == BCE_Mode::FAULT);
+    // No valid range should always assert NO_RANGE after update.
+    EXPECT_NE(BCE_GetFaultFlags() & BCE_Fault::NO_RANGE, 0u);
 }

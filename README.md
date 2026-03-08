@@ -1,9 +1,13 @@
 # DOPE-ASS
-### Digital Optical Performance Engine — Automated Scope System
+### Digital Open-Source Precise Extrapolator — Automated Scope System
 
-DOPE-ASS is the firmware for a custom smart scope built on the ESP32-P4. It drives the camera, display, sensor stack, and user interface, and uses [DOPE](https://github.com/your-org/DOPE) as a git submodule to handle all the ballistic math.
+DOPE-ASS is the firmware for a custom smart scope built on the ESP32-P4. It drives the camera, display, sensor stack, and user interface, and uses [DOPE](https://github.com/crunchy4159/DOPE) as a git submodule to handle all the ballistic math.
 
 The scope renders a live camera feed with a first-focal-plane tactical reticle overlay. Point at a target, pull the range trigger, and the hold corrections appear on the glass — elevation, windage, Coriolis, spin drift, cant, the works. DOPE-ASS handles everything above the math. DOPE handles the math.
+
+---
+
+XMR Donation Address: 8BWmYeEc8xQekZXC29ATz4aLagtw4y1U7JxFxrZFYyoaLDccPjTT6KRYvEVYeirr3M9p7ZQsvJSDeQUctB68wZPaDvZ1ifu
 
 ---
 
@@ -76,7 +80,7 @@ DOPE-ASS/
 ├── DOPE/               # Ballistic engine submodule (read-only)
 ├── src/                # Application source
 ├── DOPE-ASS SRS.md     # Full software requirements for this repo
-├── DOPE SRS.md         # Copy of the DOPE engine SRS for reference
+├── DOPE/DOPE-ASS SRS.md # DOPE engine SRS reference (in submodule)
 └── README.md           # You are here
 ```
 
@@ -107,7 +111,7 @@ git submodule update --remote DOPE
 ## Documentation
 
 - [DOPE-ASS SRS](DOPE-ASS%20SRS.md) — full requirements for the application layer
-- [DOPE SRS](DOPE%20SRS.md) — reference copy of the DOPE ballistic engine specification
+- [DOPE Engine SRS](DOPE/DOPE-ASS%20SRS.md) — reference specification from the DOPE submodule
 
 ---
 
